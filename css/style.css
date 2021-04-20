@@ -1,0 +1,1132 @@
+body {
+    margin: 0px;
+    font-family: RedHatDisplay-medium, sans-serif;
+    user-select: none;
+
+}
+
+@font-face {
+    font-family: RedHatDisplay-italic;
+    src: url('../fonts/RedHatDisplay-Italic.ttf');
+
+}
+
+@font-face {
+    font-family: RedHatDisplay-regular;
+    src: url('../fonts/RedHatDisplay-Regular.ttf');
+
+}
+
+@font-face {
+    font-family: RedHatDisplay-medium;
+    src: url('../fonts/RedHatDisplay-Medium.ttf');
+
+}
+
+@font-face {
+    font-family: RedHatDisplay-bold;
+    src: url('../fonts/RedHatDisplay-bold.ttf');
+
+}
+
+nav {
+    background-color: #000c1d;
+    width: 100%;
+    height: auto;
+}
+
+.mobilmenu {
+    float: right;
+    display: none;
+    font-size: 50px;
+    font-weight: lighter;
+    padding: 0px 15px;
+    margin: 15px;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#logo {
+    box-sizing: border-box;
+    float: left;
+    height: 70px;
+    width: auto;
+    padding: 10px;
+}
+
+#logo img {
+    padding: 10px 0px 15px 50px;
+}
+
+navbar {
+    height: auto;
+    float: right;
+    width: auto;
+    background-image: linear-gradient(to right, #000c1d, #083351);
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.menupont li {
+    list-style-type: none;
+    color: #8cbce4;
+    padding: 38px 20px;
+    background-color: transparent;
+    margin: 2px 1px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    line-height: 20px;
+    transition: 0.3s;
+
+}
+
+.menupont li:hover {
+    color: #000c1d;
+    background: #428ce0;
+}
+
+a,
+a:visited,
+a:active {
+    color: #8cbce4;
+    text-decoration: none;
+}
+
+.menupont a:nth-of-type(6) li {
+    margin-right: 50px;
+}
+
+.menupont > li:last-child {
+    display: none;
+}
+
+#nav-tartalom,
+#header-tartalom,
+#rolunk-tartalom {
+    clear: both;
+}
+
+
+.almenu {
+    position: relative;
+    cursor: pointer;
+}
+
+.lenyillomenu {
+    display: none;
+}
+
+.menunyit {
+    display: block !important;
+}
+
+.menupont > li > ul {
+    box-sizing: border-box;
+    padding: 0px 0px 0px 0px;
+    position: absolute;
+    list-style: none;
+
+    top: 96px;
+    right: 0px;
+    width: auto;
+    background-image: linear-gradient(to right, #062943, #07304D);
+    z-index: 2;
+}
+
+
+.almenu ul li {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+
+header {
+    background: black;
+    height: 95vh;
+}
+
+#headervideo {
+    width: 100%;
+    height: 100%;
+    opacity: 0.40;
+    display: block;
+    position: relative;
+}
+
+.cim {
+    position: relative;
+    right: 5%;
+    top: -50%;
+}
+
+.cim h1 {
+    color: white;
+    font-size: 4vw;
+    text-align: right;
+    margin: 0px 0px 10px 0px;
+    font-family: RedHatDisplay-italic, sans-serif;
+}
+
+.cim h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 5vw;
+    text-align: right;
+    margin: 0px;
+    font-family: RedHatDisplay-regular, sans-serif;
+}
+
+
+main {
+    height: auto;
+    width: 100%;
+}
+
+
+.rolunk {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 685px;
+    width: 100%;
+    background: #083351;
+    color: #8cbce4;
+    font-family: RedHatDisplay-Regular, sans-serif;
+}
+
+.rolunk > div {
+    margin: 0px 40px;
+}
+
+#Rszoveg {
+    width: 40%;
+    height: auto;
+    text-align: justify;
+}
+
+#videotarolo {
+    width: 40%;
+    height: auto;
+}
+
+#Rvideo {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    float: left;
+}
+
+#VVisualize {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#Rszoveg > h2 {
+    text-transform: uppercase;
+    margin: 0px;
+    display: inline-block;
+    font-size: 40px;
+    font-family: RedHatDisplay-medium, sans-serif;
+    border-bottom: 5px solid;
+    border-image-source: linear-gradient(to right, #8cbce4, #083351);
+    border-image-slice: 1;
+}
+
+#Rszoveg > h3 {
+    font-size: 25px;
+}
+
+#Rszoveg > p {
+    font-size: 20px;
+}
+
+#rolunkalairas {
+    clear: both;
+}
+
+#rolunkalairas > p:first-child {
+    font-size: 25px;
+    margin: 0px;
+}
+
+#rolunkalairas > p:last-child {
+    font-size: 18px;
+    margin: 0px;
+}
+
+
+
+#Rhatter {
+    background-image: url(../images/references/ref-background.jpg);
+    background-size: cover;
+    background-position: 0% 25%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.referenciak {
+    width: 100%;
+    background: #09253D;
+    position: relative;
+    border-top: 2px solid;
+    border-image-source: linear-gradient(to right, #083351, #8cbce4, #083351);
+    border-image-slice: 1;
+}
+
+.Rtarolo {
+    padding: 50px 0px;
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(2, 50%);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+    justify-items: center;
+}
+
+.referenciak .betuk {
+    color: white;
+    font-family: RedHatDisplay-bold, sans-serif;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 20px;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.referenciak .szamok {
+    color: white;
+    font-family: RedHatDisplay-bold, sans-serif;
+    font-size: 5vw;
+    margin: 0px;
+    z-index: 2;
+}
+
+
+
+
+.referenciamunka,
+.csomagajanlataink {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background: white;
+    color: #8cbce4;
+    font-family: RedHatDisplay-Regular, sans-serif;
+}
+
+.referenciamunka > div,
+.csomagajanlataink > div {
+    margin: 0px 40px;
+    padding: 100px 0px 50px 0px;
+}
+
+#Rmunkacim {
+    width: 85%;
+    height: auto;
+    text-align: justify;
+}
+
+#Rmunkacim > h2 {
+    color: #083351;
+    text-transform: uppercase;
+    margin: 0px;
+    display: inline-block;
+    font-size: 40px;
+    font-family: RedHatDisplay-medium, sans-serif;
+    border-bottom: 5px solid;
+    border-image-source: linear-gradient(to right, #083351, white);
+    border-image-slice: 1;
+}
+
+
+
+
+
+.galeria {
+    width: 100%;
+
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    max-height: 500px;
+    transition: 3.5s;
+}
+
+.img-c {
+    box-sizing: border-box;
+    width: 25%;
+    height: 300px;
+    padding: 10px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-w {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: transform ease-in-out 300ms;
+}
+
+.img-w img {
+    display: none;
+}
+
+.img-c {
+    transition: width ease 400ms, height ease 350ms, left cubic-bezier(0.4, 0, 0.2, 1) 420ms, top cubic-bezier(0.4, 0, 0.2, 1) 420ms;
+}
+
+.img-c:hover .img-w {
+    transform: scale(1.08);
+    transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;
+}
+
+.img-c.active {
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    z-index: 2;
+}
+
+.img-c.postactive {
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.img-c.active.positioned {
+    position: fixed;
+    left: 0% !important;
+    top: 0% !important;
+    transition-delay: 50ms;
+    background: rgb(255, 255, 255, 0.6);
+}
+
+
+#arnyekolo {
+    position: absolute;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(rgb(255, 255, 255, 0), rgb(255, 255, 255, 1), rgb(255, 255, 255, 1));
+}
+
+#Rgombtarolo {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#Rgomb {
+    padding: 0px 30px;
+    background: #000c1d;
+    text-transform: uppercase;
+    border: 0px;
+    text-align: center;
+    color: #8cbce4;
+    font-family: RedHatDisplay-medium, sans-serif;
+    transition: 225ms;
+    line-height: 20px;
+
+}
+
+#Rgomb:hover {
+    padding: 0px 40px;
+    transition: 450ms;
+    background: #428ec0;
+    color: #000c1d;
+    cursor: pointer;
+}
+
+
+
+.csomagok {
+    width: 100%;
+    height: auto;
+}
+
+#csomagfejlec {
+    height: 180px;
+    width: 100%;
+    background-image: url(../images/packages/csomagfejlec.jpg);
+    background-position: left;
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: round;
+}
+
+#csomagmain {
+    height: auto;
+    width: 100%;
+    background: #000c1d;
+}
+
+#csomagmain-end {
+    content: "";
+    clear: both;
+}
+
+.csomagikonok {
+    width: 80%;
+    margin: auto;
+    background-image: linear-gradient(to top, #083351, rgb(4, 30, 52, 0));
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.csomagikonok > div {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.csomagikonok img {
+    width: 80px;
+    margin-top: 30px
+}
+
+.csomagikonok h3 {
+    display: block;
+    text-align: center;
+    font-size: 18px !important;
+    color: #8cbce4;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+     !important;
+}
+
+.csomagtarolo {
+    width: 80%;
+    height: 80%;
+    background: #083351;
+    margin: auto;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rendereltkep {
+    align-self: flex-start;
+    width: 80%;
+}
+
+.csomagslide {
+    display: none;
+}
+
+.balnyil,
+.jobbnyil {
+    cursor: pointer;
+    margin: 20px;
+}
+
+.csomagleiras {
+    padding: 20px;
+    box-sizing: border-box;
+    background: #115574;
+    display: flex;
+    flex-direction: column;
+}
+
+.csomagleiras h3 {
+    text-transform: uppercase;
+    color: #8cbce4;
+    margin: 0 0 20px 0;
+}
+
+.csomagleiras p {
+    color: #8cbce4;
+    text-align: justify;
+}
+
+.csomagleiras a p {
+    text-transform: uppercase;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    display: block;
+    border-top: 2px solid;
+    border-image-source: linear-gradient(to right, #115574, #8cbce4, #115574);
+    border-image-slice: 1;
+    font-family: RedHatDisplay-medium, sans-serif;
+}
+
+.csomagleiras a {
+    align-self: center;
+}
+
+.csomagleiras p:last-child:hover {
+    color: white;
+    cursor: pointer;
+    border-image-source: linear-gradient(to right, #115574, white, #115574);
+    font-weight: bold;
+
+}
+
+#csomagkep1,
+#csomagkep2,
+#csomagkep3,
+#csomagkep4,
+#csomagkep5,
+#csomagkep6,
+#csomagkep7,
+#csomagkep8 {
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#csomagkep1 {
+    background-image: url(../images/packages/standard.jpg);
+}
+
+#csomagkep2 {
+    background-image: url(../images/packages/multipart_small.jpg);
+}
+
+#csomagkep3 {
+    background-image: url(../images/packages/multipart_medium.jpg);
+}
+
+#csomagkep4 {
+    background-image: url(../images/packages/multipart_large.jpg);
+}
+
+#csomagkep5 {
+    background-image: url(../images/packages/motion_standard.jpg);
+}
+
+#csomagkep6 {
+    background-image: url(../images/packages/motion_small.jpg);
+}
+
+#csomagkep7 {
+    background-image: url(../images/packages/motion_medium.jpg);
+}
+
+#csomagkep8 {
+    background-image: url(../images/packages/motion_large.jpg);
+}
+
+.nyil {
+    border: solid #000c1d;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 8px;
+}
+
+.nyil:hover {
+    border: solid #8cbce4;
+    border-width: 0 5px 5px 0;
+    transition: 50ms;
+}
+
+.jobb {
+    transform: rotate(-45deg);
+}
+
+.bal {
+    transform: rotate(135deg);
+}
+
+#Ajigombtarolo {
+    padding: 30px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#Ajigombtarolo a {
+    padding: 10px 30px;
+    background: #8CBCE4;
+    text-transform: uppercase;
+    border: 0px;
+    text-align: center;
+    color: #000c1d;
+    font-family: RedHatDisplay-medium, sans-serif;
+    font-weight: bold;
+    transition: 225ms;
+    line-height: 20px;
+}
+
+#Ajigombtarolo a:hover {
+    padding: 10px 40px;
+    transition: 450ms;
+    background: #428ec0;
+    color: #000c1d;
+    cursor: pointer;
+}
+
+
+footer {
+    width: 100%;
+}
+
+.footeralso {
+    width: 100%;
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    background: #000c1d;
+    grid-template-areas:
+        ". kapcsform kapcsolat megosztas .";
+    transition: 350ms;
+}
+
+.kapcsform {
+    transition: 350ms;
+    grid-area: kapcsform;
+    background: #8cbce4;
+    width: 400px;
+    height: 450px;
+    position: relative;
+    bottom: 200px;
+    margin: 0px;
+    padding: 20px;
+}
+
+.megosztas {
+    transition: 350ms;
+    grid-area: megosztas;
+    height: 290px;
+    position: relative;
+    bottom: 0px;
+    width: 100px;
+    margin: 0px;
+}
+
+.kapcsolat {
+    transition: 350ms;
+    grid-area: kapcsolat;
+    height: 290px;
+    position: relative;
+    bottom: 0px;
+    width: 400px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kapcsform #nev,
+.kapcsform #email,
+.kapcsform #targy {
+    width: 100%;
+    height: 35px;
+    box-sizing: border-box;
+    margin: 6px 0px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.kapcsform #uzenet {
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+
+.kapcsform h2 {
+    margin: 0px 0px 20px 0px;
+    color: #083351;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 24px;
+    font-family: RedHatDisplay-medium, sans-serif;
+    border-bottom: 5px solid;
+    border-image-source: linear-gradient(to right, #083351, #8cbce4);
+    border-image-slice: 1;
+}
+
+.kapcsform #gomb {
+    color: #8cbce4;
+    background: #083351;
+    padding: 8px 40px;
+    text-transform: uppercase;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    font-family: RedHatDisplay-medium, sans-serif;
+    font-size: 15px;
+    transition: 350ms;
+    border: 0px;
+}
+
+.kapcsform #gomb:hover {
+    background: #428ec0;
+    padding: 8px 50px;
+    color: #000c1d;
+    transition: 350ms;
+    cursor: pointer;
+}
+
+
+.megosztas {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.megosztas img {
+    width: 50px;
+    margin: 6px 0px;
+}
+
+.megosztas img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.kapcsolat pre {
+    color: #8cbce4;
+    font-size: 15px;
+    font-family: RedHatDisplay-medium, sans-serif;
+}
+
+.copyright {
+    width: 100%;
+    height: auto;
+    background: #000c1d;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 3px solid;
+    border-image-source: linear-gradient(to right, #000c1d, #083351, #000c1d);
+    border-image-slice: 1;
+}
+
+.copyright p {
+    color: #8cbce4;
+    margin: 10px 80px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    border-radius: 35px;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+    navbar {
+        height: auto;
+        float: right;
+        width: auto;
+    }
+
+    .menupont a:nth-of-type(5) li,
+    .menupont a:nth-of-type(6) li {
+        display: none;
+    }
+
+    .menupont > li:last-child {
+        display: block;
+        margin-right: 50px;
+    }
+
+    .lenyillomenu > a:nth-of-type(1),
+    .lenyillomenu > a:nth-of-type(2) {
+        display: none;
+    }
+
+    .img-c {
+
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    .menupont > a:nth-of-type(4) li,
+    .menupont > a:nth-of-type(5) li,
+    .menupont > a:nth-of-type(6) li {
+        display: none;
+    }
+
+    .lenyillomenu > a:nth-of-type(2) {
+        display: block;
+    }
+
+    .menupont > li > ul {
+        background-image: linear-gradient(to right, #05263F, #08304C);
+    }
+
+    .rendereltkep {
+        width: 100%;
+    }
+
+    .rolunk {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+        padding: 20px 0px;
+    }
+
+    #videotarolo {
+        width: 80%;
+        height: auto;
+    }
+
+    #Rszoveg {
+        width: 80%;
+        height: auto;
+        text-align: justify;
+
+    }
+
+    .csomagikonok img {
+        width: 80px;
+        margin-top: 30px;
+    }
+
+    .footeralso {
+        height: 400px;
+        grid-template-columns: 10% 40% 40% 10%;
+        grid-template-areas:
+            ". kapcsform kapcsolat ."
+            ". megosztas megosztas .";
+    }
+
+    .megosztas {
+        height: 100px;
+        width: 100%;
+        bottom: 200px;
+        transition: 350ms;
+        flex-direction: row;
+    }
+
+    .megosztas img {
+        width: 50px;
+        margin: 0px 15px;
+    }
+
+    .kapcsform {
+        width: 100%;
+        box-sizing: border-box;
+        height: 490px;
+    }
+
+    .kapcsolat {
+        width: 100%;
+        bottom: 0px;
+        height: 290px;
+        box-sizing: border-box;
+    }
+}
+}
+
+@media screen and (max-width: 850px) {
+
+    .menupont > a:nth-of-type(3) li,
+    .menupont > a:nth-of-type(4) li,
+    .menupont > a:nth-of-type(5) li,
+    .menupont > a:nth-of-type(6) li {
+        display: none;
+    }
+
+    .lenyillomenu > a:nth-of-type(1),
+    .lenyillomenu > a:nth-of-type(2) {
+        display: block;
+    }
+
+    .menupont > li > ul {
+        background-image: linear-gradient(to right, #03192E, #072D49);
+
+    }
+
+    .img-c {
+
+        width: 50%;
+    }
+}
+
+.csomagikonok h3 {
+    font-size: 15px;
+}
+
+@media screen and (max-width: 750px) {
+    navbar {
+        background-image: linear-gradient(#000c1d, #083351);
+    }
+
+    .menupont {
+        display: none;
+    }
+
+    navbar {
+        float: left;
+        width: 100%;
+    }
+
+    .mobilmenu {
+        display: block;
+    }
+
+    .menupont li {
+        margin: 0px;
+        box-sizing: border-box;
+        width: 100%;
+        position: static;
+    }
+
+    .lenyillomenu {
+        display: none;
+    }
+
+    .menupont > a:nth-of-type(3) li,
+    .menupont > a:nth-of-type(4) li,
+    .menupont > a:nth-of-type(5) li,
+    .menupont > a:nth-of-type(6) li {
+        display: block;
+    }
+
+    .menupont > li:last-child {
+        display: none;
+    }
+
+    .img-c {
+
+        width: 100%;
+    }
+
+    header {
+        height: 40vh;
+    }
+
+    .csomagikonok img {
+        width: 60px;
+        margin-top: 40px;
+    }
+
+    .footeralso {
+        width: 100%;
+        display: block;
+        height: 600px;
+    }
+
+    .kapcsolat {
+        transition: 350ms;
+        height: 240px;
+        width: 80%;
+        margin: auto;
+        bottom: 100px;
+        align-content: space-between;
+    }
+
+    .footeralso pre {
+        margin-bottom: 0px;
+    }
+
+    .kapcsform {
+        transition: 350ms;
+        height: 450px;
+        margin: auto;
+        width: 80%;
+        bottom: 200px;
+    }
+
+    .megosztas {
+        transition: 350ms;
+        height: 100px;
+        margin: auto;
+        width: 80%;
+        bottom: 440px;
+        flex-direction: row;
+    }
+
+    .megosztas img {
+        width: 50px;
+        margin: 0px 15px;
+    }
+
+    #csomagkep1,
+    #csomagkep2,
+    #csomagkep3,
+    #csomagkep4,
+    #csomagkep5,
+    #csomagkep6,
+    #csomagkep7,
+    #csomagkep8 {
+        height: 30vh;
+    }
+}

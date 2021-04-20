@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Simon Rómeó">
+    <meta name="description" content="Renderelt képek, animációk 3D modellből, összeállításból. Élethű kinézet modelleidről mielőtt gyártásba adnád azokat.">
+    <meta name="keywords" content="3D, 3D renderelt képek, renderelt animáció, alkatrészből kép, alkatrészből animáció, összeállításból kép, összeállításból animáció">
+
+    <title>Virtual Design - árajánlat</title>
+    <link rel="shortcut icon" href="images/header/virtualdesign_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <div class="mobilmenu">&#8801;</div>
+        <div id="logo">
+            <img src="images/header/logo.png" alt="virtual design logo" height="100%">
+        </div>
+        <navbar>
+            <ul class="menupont">
+                <a href="index.html">
+                    <li>Kezdőlap</li>
+                </a>
+                <a href="index.html#rolunklink">
+                    <li>Rólunk</li>
+                </a>
+                <a href="index.html#referencialink">
+                    <li>Referencia munkák</li>
+                </a>
+                <a href="index.html#csomagoklink">
+                    <li>Csomagok</li>
+                </a>
+                <a href="ajanlat.html">
+                    <li>Ajánlatkérés</li>
+                </a>
+                <a href="#kapcsolatlink">
+                    <li>Kapcsolat</li>
+                </a>
+                <li class="almenu">Több...
+                    <ul id="myDropdown" class="lenyillomenu">
+                        <a href="index.html#referencialink">
+                            <li>Referencia munkák</li>
+                        </a>
+                        <a href="index.html#csomagoklink">
+                            <li>Csomagok</li>
+                        </a>
+                        <a href="ajanlat.html">
+                            <li>Ajánlatkérés</li>
+                        </a>
+                        <a href="#kapcsolatlink">
+                            <li>Kapcsolat</li>
+                        </a>
+                    </ul>
+                </li>
+            </ul>
+        </navbar>
+        <div id="nav-tartalom"></div>
+    </nav>
+    <header>
+       <img src="images/header/formpicture.jpg" alt="ajánlatkérés kép" style="width: 100%; opacity: 0.6;">
+       
+        <div class="cim" style="right: 20%;" >
+            <h1>Árajánlat kérés - fejlesztés alatt...</h1>
+        </div>
+    </header>
+    <main>
+          
+           
+    </main>
+    <footer>
+        <div style="width: 100%; clear: both;"><iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=1067%20Budapest%20E%C3%B6tv%C3%B6s%20utca%2037+(Virtual%20Design)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+        <div class="footeralso">
+
+            <div class="kapcsform">
+                <h2>lépj kapcsolatba velünk</h2>
+                <form action="action.php" method="post">
+                    <input type="text" id="nev" name="nev" placeholder="Név" required>
+                    <input type="text" id="email" name="email" placeholder="E-mail cím" required>
+                    <input type="text" id="targy" name="targy" placeholder="Tárgy" required>
+                    <textarea name="uzenet" id="uzenet" cols="30" rows="10" placeholder="Üzenet" required; style="resize: none;"></textarea>
+                    <input type="submit" value="Küldés" id="gomb">
+                </form>
+            </div>
+            <div class="kapcsolat">
+                <pre>
+E-mail:
+<a href="mailto:info@virtualdesign.hu">info@virtualdesign.hu</a>
+<a href="mailto:support@virtualdesign.hu">support@virtualdesign.hu</a>
+           
+Telefon:
+<a href="tel:+361234567">+36 1 234 567</a>
+<a href="tel:+3623456789">+36 23 456 789</a>
+           
+Cím:
+1067 Budapest, Eötvös utca 37. 2/12
+           </pre>
+            </div>
+            <div class="megosztas">
+                <a href="https://www.facebook.com/443czs/"><img src="images/footer/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/szajmon90/"><img src="images/footer/instagram.png" alt="instagram"></a>
+                <a href="https://www.youtube.com/"><img src="images/footer/youtube.png" alt="youtube"></a>
+                <a href="https://www.linkedin.com/in/rómeó-simon-995198198"><img src="images/footer/linkedin.png" alt="linkedin"></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <div id="kapcsolatlink">
+                <p>&copy;2009-2021 Virtual Design - Minden jog fentartva</p>
+            </div>
+            <div>
+                <p>Jogi tudnivalók - Általános szerződési fel>tételek - Adatvédelem - Cookiek</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("csomagslide");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-white";
+        }
+    </script>
+</body></html>
