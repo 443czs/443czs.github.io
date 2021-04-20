@@ -297,7 +297,7 @@ main {
 
 .Rtarolo {
     padding: 50px 0px;
-    width: 70%;
+    width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 3fr);
@@ -314,7 +314,7 @@ main {
     font-size: 1.5vw;
     text-transform: uppercase;
     margin: 0px;
-    padding: 20px;
+    padding: 0px;
     white-space: nowrap;
     z-index: 2;
 }
@@ -548,7 +548,7 @@ main {
 
 .rendereltkep {
     align-self: flex-start;
-    width: 80%;
+    width: 100%;
 }
 
 .csomagslide {
@@ -583,7 +583,7 @@ main {
 .csomagleiras a p {
     text-transform: uppercase;
     text-align: center;
-    width: 200px;
+    width: auto;
     padding: 10px;
     display: block;
     border-top: 2px solid;
@@ -863,6 +863,7 @@ footer {
     border-radius: 35px;
     display: none;
     transition: all 0.3s ease;
+    z-index: 2;
 }
 
 #return-to-top i {
@@ -993,7 +994,7 @@ footer {
         box-sizing: border-box;
     }
 }
-}
+
 
 @media screen and (max-width: 850px) {
 
@@ -1018,10 +1019,28 @@ footer {
 
         width: 50%;
     }
-}
-
+    .csomagtarolo {
+    width: 100%; padding: 0px;}
+    
+    .csomagikonok {
+        width: 100%;}
+    
+    .balnyil {margin: 0px 5px 0px 10px}
+    .jobbnyil {margin: 0px 10px 0px 5px;}
+    #csomagkep1,
+    #csomagkep2,
+    #csomagkep3,
+    #csomagkep4,
+    #csomagkep5,
+    #csomagkep6,
+    #csomagkep7,
+    #csomagkep8 {
+        height: 40vh;
+    }
 .csomagikonok h3 {
     font-size: 15px;
+}
+
 }
 
 @media screen and (max-width: 750px) {
@@ -1077,7 +1096,18 @@ footer {
         width: 60px;
         margin-top: 40px;
     }
+    
+.referenciak .betuk {
+    
+    font-size: 9px;
 
+}
+
+.referenciak .szamok {
+    font-size: 26px;
+
+}
+    
     .footeralso {
         width: 100%;
         display: block;
@@ -1104,7 +1134,9 @@ footer {
         width: 80%;
         bottom: 200px;
     }
-
+.kapcsform h2 {
+    font-size: 14px;
+}
     .megosztas {
         transition: 350ms;
         height: 100px;
@@ -1117,16 +1149,5 @@ footer {
     .megosztas img {
         width: 50px;
         margin: 0px 15px;
-    }
-
-    #csomagkep1,
-    #csomagkep2,
-    #csomagkep3,
-    #csomagkep4,
-    #csomagkep5,
-    #csomagkep6,
-    #csomagkep7,
-    #csomagkep8 {
-        height: 30vh;
-    }
+    }   
 }
